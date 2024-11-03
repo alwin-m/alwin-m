@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookDoc - Book Your Doctor's Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BookDoc</h1>
+        <p>Your one-stop platform to book doctor appointments and register hospitals</p>
+    </header>
+    
+    <section id="booking">
+        <h2>Book an Appointment</h2>
+        <form>
+            <label for="hospital">Choose a hospital:</label>
+            <select id="hospital" name="hospital" required>
+                <option value="">Select a hospital</option>
+                <option value="hospital1">City Health Center</option>
+                <option value="hospital2">General Hospital</option>
+                <option value="hospital3">Specialist Clinic</option>
+            </select>
+            
+            <label for="doctor">Choose a doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select a doctor</option>
+                <option value="doctor1">Dr. A. Kumar</option>
+                <option value="doctor2">Dr. B. Sharma</option>
+                <option value="doctor3">Dr. C. Nair</option>
+            </select>
+            
+            <label for="date">Choose a date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <input type="submit" value="Book Appointment">
+        </form>
+    </section>
+
+    <section id="hospital-registration">
+        <h2>Register Your Hospital</h2>
+        <form id="register-form">
+            <label for="hospital-name">Hospital Name:</label>
+            <input type="text" id="hospital-name" name="hospital-name" required>
+
+            <label for="hospital-location">Location:</label>
+            <input type="text" id="hospital-location" name="hospital-location" required>
+
+            <label for="hospital-contact">Contact Number:</label>
+            <input type="tel" id="hospital-contact" name="hospital-contact" required>
+
+            <input type="submit" value="Register Hospital">
+        </form>
+    </section>
+
+    <section id="doctor-registration">
+        <h2>Add Doctor Information</h2>
+        <form id="doctor-form">
+            <label for="doctor-name">Doctor Name:</label>
+            <input type="text" id="doctor-name" name="doctor-name" required>
+
+            <label for="doctor-specialty">Specialty:</label>
+            <input type="text" id="doctor-specialty" name="doctor-specialty" required>
+
+            <label for="doctor-hospital">Hospital:</label>
+            <select id="doctor-hospital" name="doctor-hospital" required>
+                <option value="">Select a hospital</option>
+                <option value="hospital1">City Health Center</option>
+                <option value="hospital2">General Hospital</option>
+                <option value="hospital3">Specialist Clinic</option>
+            </select>
+
+            <input type="submit" value="Add Doctor">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 BookDoc. All rights reserved.</p>
+    </footer>
+</body>
+                  </html>
